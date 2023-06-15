@@ -88,7 +88,6 @@ def download_image(url):
     # get image url
     headers = gen_headers()
     session = requests.session()
-    session.keep_alive = False
     image_name_url_list = get_image_info(url, session, headers)
 
     # save image to local folder
@@ -107,7 +106,9 @@ def main():
     # url = "https://telegra.ph/NO001-%E6%98%AF%E4%B8%80%E5%8F%AA%E5%BA%9F%E5%96%B5%E4%BA%86-%E5%A5%B6%E7%89%9B-10-01-2"
     # url = "https://telegra.ph/E3Eva2-03-18-2"
     # url = "https://telegra.ph/6raYJv-06-03"
-    url = "https://telegra.ph/2qUZfe-03-18"
+    # url = "https://telegra.ph/2qUZfe-03-18"
+    # url = "https://telegra.ph/mINNBf-10-01"
+    url = "https://telegra.ph/aqA3yi-02-06"
     download_image(url)
     print(">>> all task done!")
 
